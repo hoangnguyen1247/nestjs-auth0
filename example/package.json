@@ -1,3 +1,13 @@
 {
-    "name": "example"
+    "name": "example",
+    "dependencies": {
+        "@nestjs/common": "^8.4.4",
+        "@nestjs/config": "^2.0.0",
+        "@nestjs/core": "^8.4.4",
+        "auth0": "^2.40.0",
+        "nestjs-auth0": "^1.1.0"
+    },
+    "devDependencies": {
+        "@types/auth0": "^2.34.18"
+    }
 }

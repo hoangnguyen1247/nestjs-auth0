@@ -1,12 +1,7 @@
 import { ModuleMetadata, Type } from "@nestjs/common";
+import { AuthenticationClientOptions } from "auth0";
 
-export interface Auth0AuthenticationOptions {
-    domain: string;
-
-    clientId: string;
-
-    clientSecret?: string;
-}
+export type Auth0AuthenticationOptions = AuthenticationClientOptions;
 
 export interface Auth0AuthenticationOptionsFactory {
     createAuth0AuthenticationOptions(): Auth0AuthenticationOptions | Promise<Auth0AuthenticationOptions>;

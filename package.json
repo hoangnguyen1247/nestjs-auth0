@@ -4,7 +4,7 @@
     "description": "",
     "main": "lib/index.js",
     "scripts": {
-        "prebuild": "rimraf dist",
+        "prebuild": "rimraf lib",
         "build": "npx tsc -p tsconfig.build.json",
         "type-check": "tsc --noEmit",
         "lint": "eslint \"{src,apps,libs,test}/**/*.ts\"",
