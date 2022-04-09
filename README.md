@@ -44,8 +44,9 @@ import { Auth0AuthenticationModule } from 'nestjs-auth0';
 @Module({
   imports: [
     Auth0AuthenticationModule.forRoot({
-      apiKey: 'my_secret_key',
-      apiVersion: '2020-08-27',
+      domain: '',
+      client_id: '',
+      client_secret: '',
     }),
   ],
 })
