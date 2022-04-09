@@ -6,6 +6,9 @@
   <p align="center">
     Injectable Auth0 Authentication client for your nestjs projects
   </p>
+  <p align="center">
+    Using Auth0 Management, please see <a href="https://github.com/hoangnguyen1247/nestjs-auth0-management">nestjs-auth0-management</a>
+  </p>
 
 </p>
 
@@ -22,7 +25,7 @@
 
 ## About
 
-`nestjs-auth0` implements a module, `Auth0Module`, which when imported into
+`nestjs-auth0` implements a module, `Auth0AuthenticationModule`, which when imported into
 your nestjs project provides a Auth0 AuthenticationClient to any class that injects it. This
 lets Auth0 be worked into your dependency injection workflow without having to
 do any extra work outside of the initial setup.
@@ -35,7 +38,7 @@ npm install --save auth0 nestjs-auth0
 
 ## Getting Started
 
-The simplest way to use `nestjs-auth0` is to use `Auth0Module.forRoot`
+The simplest way to use `nestjs-auth0` is to use `Auth0AuthenticationModule.forRoot`
 
 ```typescript
 import { Module } from '@nestjs-common';
@@ -44,8 +47,9 @@ import { Auth0AuthenticationModule } from 'nestjs-auth0';
 @Module({
   imports: [
     Auth0AuthenticationModule.forRoot({
-      apiKey: 'my_secret_key',
-      apiVersion: '2020-08-27',
+      domain: '',
+      client_id: '',
+      client_secret: '',
     }),
   ],
 })
