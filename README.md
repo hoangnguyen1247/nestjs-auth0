@@ -48,8 +48,8 @@ import { Auth0AuthenticationModule } from 'nestjs-auth0';
   imports: [
     Auth0AuthenticationModule.forRoot({
       domain: '',
-      client_id: '',
-      client_secret: '',
+      clientId: '',
+      clientSecret: '',
     }),
   ],
 })
@@ -82,8 +82,8 @@ import { Auth0AuthenticationModule } from 'nestjs-auth0';
       inject: [ConfigService],
       useFactory: (configService: ConfigService) => ({
         domain: configService.get('auth0_domain'),
-        client_id: configService.get('auth0_client_id'),
-        client_secret: configService.get('auth0_client_secret'),
+        clientId: configService.get('auth0_client_id'),
+        clientSecret: configService.get('auth0_client_secret'),
       }),
     }),
   ],
