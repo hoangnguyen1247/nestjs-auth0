@@ -4,6 +4,7 @@
     "description": "",
     "main": "lib/index.js",
     "scripts": {
+        "prepare": "husky install",
         "prebuild": "rimraf lib",
         "build": "npx tsc -p tsconfig.build.json",
         "copy:src": "node ./CopyAndSyncSrc.js",
