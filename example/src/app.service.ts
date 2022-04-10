@@ -1,5 +1,5 @@
 import { AuthenticationClient } from "auth0";
-import { InjectAuthenticationClient } from "src";
+import { InjectAuthenticationClient } from "nestjs-auth0";
 
 export class AppService {
     constructor(

@@ -9,3 +9,5 @@ package-lock.json
 
 .eslintcache
 coverage
+
+nestjs-auth0

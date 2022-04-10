@@ -11,9 +11,9 @@ import { AppService } from "./app.service";
         Auth0AuthenticationModule.forRootAsync({
             inject: [ConfigService],
             useFactory: (configService: ConfigService) => ({
-                domain: configService.get('auth0_domain'),
-                clientId: configService.get('auth0_client_id'),
-                clientSecret: configService.get('auth0_client_secret'),
+                domain: configService.get('AUTH0_DOMAIN'),
+                clientId: configService.get('AUTH0_CLIENT_ID'),
+                clientSecret: configService.get('AUTH0_CLIENT_SECRET'),
             }),
         }),
     ],
