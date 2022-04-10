@@ -14,7 +14,7 @@ export class Auth0AuthenticationCoreModule {
         };
 
         return {
-            exports: [],
+            exports: [auth0AuthenticationClient],
             module: Auth0AuthenticationCoreModule,
             providers: [auth0AuthenticationClient],
         };
